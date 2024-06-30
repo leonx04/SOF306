@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Nguyễn Văn A",
+    "gender": "Nam",
+    "marks": 8.5,
+    "contact": {
+      "phone": "0123456789",
+      "email": "v5jXc@example.com"
+    },
+    "subjects": [
+      "Toan",
+      "Ly"
+    ]
+  },
+  {
+    "name": "Nguyễn Thị B",
+    "gender": "Nu",
+    "marks": 9.5,
+    "contact": {
+      "phone": "0123456789",
+      "email": "v5jXc@example.com"
+    },
+    "subjects": [
+      "Toan",
+      "Ly"
+    ]
+  },
+  {
+    "name": "Nguyễn Văn C",
+    "gender": "Nam",
+    "marks": 7.5,
+    "contact": {
+      "phone": "0123456789",
+      "email": "v5jXc@example.com"
+    },
+    "subjects": [
+      "Toan",
+      "Ly"
+    ]
+  }
+]

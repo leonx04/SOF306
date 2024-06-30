@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON </title>
+</head>
+ <script >
+     var sv = {
+         "name": "Nguyen Van A",
+         "gender": true,
+         "marks": "7.2",
+         "contact":{
+             "phone": "0987654321",
+             "email": "info@gmail.com"
+         },
+            "subjects": ["SOF306", "COM1018"]
+     };
+        // Xuất đối tượng
+        console.log(sv);
+        // Truy xuất thuoc tính
+        sv.name = sv['name'].toUpperCase();
+        console.log(sv.name, sv.contact.email);
+        // Duyệt đối  tượng theo key
+        for(var key in sv){
+            console.log(key, sv[key]);
+        }
+ </script>
+<body>
+
+</body>
+</html>
