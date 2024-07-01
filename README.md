@@ -18,7 +18,7 @@ This project study makes use of the following key technologies:
 For more detailed information about the technologies used in this project, please refer to the official documentation:
 
 - [Thymeleaf Documentation](https://www.thymeleaf.org/documentation.html)
-- [AWS Lambda Developer Guide](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
+- [Lambda Expressions Documentation](https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html)
 - [Spring Boot Documentation](https://spring.io/projects/spring-boot)
 
 ## 🤝 Contributing
