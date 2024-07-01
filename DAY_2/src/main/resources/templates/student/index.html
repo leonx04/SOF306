@@ -1,10 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Students</title>
 </head>
 <body>
-$END$
+  <a th:href="@{|/student?index=${n-1}|}">Previous</a>
+  [~[(${n +1})]/4~]
+  <a th:href="@{|/student?index=${n+1}|}">Next</a>
+
+<hr>
+<ul>
+   <li> Name : [[${sinhViens.name}]]</li>
+   <li> Gender : [[${sinhViens.gender}]]</li>
+   <li> Mark : [[${sinhViens.mark > 5 ? 'Pass' : 'Fail'}]]</li>
+   <li> Email : [[${sinhViens.email}]]</li>
+</ul>
 </body>
 </html>

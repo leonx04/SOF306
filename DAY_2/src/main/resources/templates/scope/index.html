@@ -1,10 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Scope</title>
 </head>
 <body>
-$END$
+<h3>Scope &amp; Parameters</h3>
+<ul>
+    <li>A - Model: [[${a}]]</li>
+    <li>B - Request: [[${b}]]</li>
+    <li>C - Session: [[${session.c}]]</li>
+    <li>D - Application: [[${application.d}]]</li>
+    <li>X - Parameters : <th:block th:text="${param.x}"></th:block></li>
+</ul>
+
+<a th:href="@{/scope(x='Jung Nguyen')}">Jung Nguyen</a>
 </body>
 </html>

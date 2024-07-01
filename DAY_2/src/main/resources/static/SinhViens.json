@@ -1,0 +1,26 @@
+[
+  {
+    "name": "John",
+    "gender": true,
+    "mark": 9.4,
+    "email": "Tq9u8@example.com"
+  },
+  {
+    "name": "Jane",
+    "gender": false,
+    "mark": 7.9,
+    "email": "X4KQe@example.com"
+  },
+  {
+    "name": "Mark",
+    "gender": true,
+    "mark": 8.5,
+    "email": "jZ5P6@example.com"
+  },
+  {
+    "name": "Mary",
+    "gender": false,
+    "mark": 6.7,
+    "email": "p5zPb@example.com"
+  }
+]
