@@ -1,0 +1,42 @@
+[
+  {
+    "name": "John",
+    "gender": true,
+    "mark": 9.4,
+    "contacts": {
+      "phone": "123456789",
+      "email": "Tq9u8@example.com"
+    },
+    "subjects": ["Toán", "Lý", "Hóa"]
+  },
+  {
+    "name": "Peter",
+    "gender": true,
+    "mark": 7.0,
+    "contacts": {
+      "phone": "123456789",
+      "email": "Tq9u8@example.com"
+    },
+    "subjects": ["Toán", "Lý"]
+  },
+  {
+    "name": "Mary",
+    "gender": false,
+    "mark": 6.0,
+    "contacts": {
+      "phone": "123456789",
+      "email": "Tq9u8@example.com"
+    },
+    "subjects": ["Toán"]
+  },
+  {
+    "name": "Jane",
+    "gender": false,
+    "mark": 8.0,
+    "contacts": {
+      "phone": "123456789",
+      "email": "Tq9u8@example.com"
+    },
+    "subjects": ["Toán", "Lý"]
+  }
+]

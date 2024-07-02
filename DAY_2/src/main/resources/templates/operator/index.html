@@ -1,10 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>operator</title>
 </head>
 <body>
-$END$
+<h3>Thymeleaf operator</h3>
+<p th:text="${x}">x</p>
+<p th:text="${y}">y</p>
+<p th:text="${x + y}">x+y</p>
+<p th:text="${x - y}">x-y</p>
+<p th:text="${x * y}">x*y</p>
+<p th:text="${x / y}">x/y</p>
+<p th:text="${x % y}">x % y</p>
+<p th:text="${x gt y} and ${x eq y}">x == y</p>
+<p th:text="${x lt y} or ${x eq y}">x == y</p>
+<p th:text="${x le y}">x le y</p>
+<p th:text="${x ge y}">x ge y</p>
+<p th:text="${x ne y}">x ne y</p>
+<p th:text="not ${x > y}"></p>
+<p th:text="${x > 0 and y > 0}">x > 0 and y > 0</p>
+<p th:text="${x > 0 or y > 0}">x > 0 or y > 0</p>
+<p th:text="${x > 0 and y > 0} ? 'true' : 'false'">x > 0 and y > 0 ? 'true' : 'false'</p>
+<p th:text="${x > 0 or y > 0} ? 'true' : 'false'">x > 0 or y > 0 ? 'true' : 'false'</p>
+<p th:text="${x > y} ? 'true' : 'false'">x > y ? 'true' : 'false'</p>
+<p th:text="@{|/a/b/${x}/${y}|}">/a/b/${x}/${y}</p>
+<p th:text="|/a/b/${x}/${y}|"></p>
+<p th:text="@{/a/b/{p1}/c/{p2}(p1=${x}, p2=${y})}"></p>
 </body>
 </html>

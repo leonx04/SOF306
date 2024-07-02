@@ -1,10 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Student List</title>
 </head>
 <body>
-$END$
+<h1>Students</h1>
+<ul>
+    <li th:each="sv,state : ${list}">
+        <a th:href="@{|/students2/list?index=${state.index}|}">[(${sv.name})]</a>
+    </li>
+</ul>
+<h3>Student Detail</h3>
+<ul th:object="${sv}">
+    <li>Name: <span th:text="*{name}"></span></li>
+    <li>Gender: <span th:text="*{gender ? 'Male' : 'Female'}"></span></li>
+    <li>Mark: <span th:text="*{mark}"></span></li>
+    <p>Contacts ==></p>
+    <li>Phone: <span th:text="*{contacts.phone}"></span></li>
+    <li>Email: <span th:text="*{contacts.email}"></span></li>
+    <li>Subjects:
+        <ul th:each="subject : *{subjects}">
+            <li th:text="${subject}"></li>
+        </ul>
+    </li>
+    <li th:switch="*{#arrays.length(subjects)}">
+        <p>Time: </p>
+        <span th:case="0">No subject</span>
+        <span th:case="1">Mới vào</span>
+        <span th:case="2">Đang học</span>
+        <span th:case="3">Sắp xong</span>
+        <span th:case="*">Sắp ra trường</span>
+    </li>
+    <li th:if="*{mark} > 9 ">Good student</li>
+</ul>
 </body>
 </html>
