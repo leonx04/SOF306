@@ -1,17 +1,16 @@
-# 🌱 Project Study: Thymeleaf, Lambda, and Spring Boot
+# 🌱 Project Study: Thymeleaf, Lambda Expressions, and Spring Boot
 
 ## 📖 Description
 
-Welcome to our comprehensive project study focusing on the integration and functionalities of **Thymeleaf**, **AWS Lambda**, and **Spring Boot** within a web application context. This repository is designed as a learning resource to explore the synergies between these powerful technologies, aiming to provide a deep dive into building modern, scalable web applications.
-
+Welcome to our comprehensive project study focusing on the integration and functionalities of **Thymeleaf**, **Lambda Expressions**, and **Spring Boot** within a web application context. This repository is designed as a learning resource to explore the synergies between these powerful technologies, aiming to provide a deep dive into building modern, scalable web applications.
 
 ## 🛠️ Technologies
 
 This project study makes use of the following key technologies:
 
 - **Thymeleaf**: A modern server-side Java template engine for web and standalone environments.
-- **AWS Lambda**: A serverless compute service that lets you run code without provisioning or managing servers.
-- **Spring Boot**: An open-source Java-based framework used to create a micro Service.
+- **Lambda Expressions**: A feature of Java that enables you to treat functionality as a method argument or treat a code as data.
+- **Spring Boot**: An open-source Java-based framework used to create microservices.
 
 ## 📚 Resources
 
@@ -25,9 +24,6 @@ For more detailed information about the technologies used in this project, pleas
 
 We welcome contributions to this project! Whether it's submitting bug reports, feature requests, or code contributions, please feel free to reach out or submit a pull request.
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 📞 Contact
 
