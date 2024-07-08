@@ -20,7 +20,8 @@ public class SinhViens2Controller {
     public String list(Model model, @RequestParam("index") Optional<Integer> index) throws IOException {
         File file = new ClassPathResource("/static/SinhViens2.json").getFile();
         ObjectMapper objectMapper = new ObjectMapper();
-        TypeReference<List<SinhVien>> type = new TypeReference<List<SinhVien>>() {};
+        TypeReference<List<SinhVien>> type = new TypeReference<List<SinhVien>>() {
+        };
         List<SinhVien> list = objectMapper.readValue(file, type);
 
         model.addAttribute("sv", list.get(index.orElse(0)));

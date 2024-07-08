@@ -1,0 +1,33 @@
+[
+  {
+    "name": "nguyen van teo",
+    "gender": true,
+    "mark": 9.5,
+    "contacts": {
+      "phone": "0123456789",
+      "email": "a@a.com"
+    },
+    "subjects": ["Toan", "Van", "Sinh", "Lap trinh"]
+  },
+    {
+        "name": "nguyen van ti",
+        "gender": true,
+        "mark": 9.5,
+        "contacts": {
+            "phone": "0123456789",
+            "email": "a@a.com"
+        },
+        "subjects": ["Toan",  "Lap trinh"]
+    },
+    {
+        "name": "nguyen van tung",
+        "gender": true,
+        "mark": 9.5,
+        "contacts": {
+            "phone": "0123456789",
+            "email": "a@a.com"
+        },
+        "subjects": ["Toan",  "Lap trinh"]
+    }
+
+]

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Ultility Thymeleaf</title>
+</head>
+<body>
+<nav th:replace="~{/layout/menu.html}"></nav>
+<h1>Utility Thymeleaf</h1>
+<b>Tổng hợp</b>
+<ul>
+    <li>Today: <span th:text="${now}"></span></li>
+    <li>Today: <span th:text="${#dates.format(now, 'EEE, dd/MM/yyyy')}"></span></li>
+
+    <li>Số luợng  sinh viên: <span th:text="${#lists.size(SinhViens)}"></span></li>
+</ul>
+
+<b>List</b>
+<ul th:each="sv: ${SinhViens}" th:object="${sv}">
+    <li>
+      Tên  <span th:text="*{#strings.capitalizeWords(name)}"></span>
+    </li>
+    <li>
+     Gioi tinh   <span th:text="*{gender ? 'Male' : 'Female'}"></span>
+    </li>
+    <li>
+      Điểm  <span th:text="*{#numbers.formatDecimal(mark, 0, 'COMMA',2,'POINT')}"></span>
+    </li>
+    <li>
+        Số môn học  <span th:text="*{#lists.size(subjects)}"></span>
+    </li>
+    <li>
+       Số môn học <span th:text="*{#arrays.length(subjects)}"></span>
+    </li>
+</ul>
+</body>
+</html>

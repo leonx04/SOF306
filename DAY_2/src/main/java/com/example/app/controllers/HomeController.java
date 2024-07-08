@@ -17,7 +17,7 @@ public class HomeController {
         model.addAttribute("message", "Jung Nguyễn  <b>Hello, World!</b>");
 
         ObjectMapper mapper = new ObjectMapper();
-        String path = "src/main/resources/static/SinhVien.json";
+        String path = "A:\\SOF306\\DAY_2\\src\\main\\resources\\static\\SinhVien.json";
         SinhVien sv = mapper.readValue(new File(path), SinhVien.class);
         model.addAttribute("sv", sv);
 

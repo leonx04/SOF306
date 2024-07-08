@@ -12,16 +12,9 @@ import java.util.Locale;
 public class ResourceConfig {
     @Bean
     public MessageSource messageSource() {
-        ReloadableResourceBundleMessageSource messageSource =  new ReloadableResourceBundleMessageSource();
+        ReloadableResourceBundleMessageSource messageSource = new ReloadableResourceBundleMessageSource();
         messageSource.setDefaultEncoding("utf-8");
         messageSource.setBasename("classpath:menu");
         return messageSource;
-    }
-
-    @Bean
-    public LocaleResolver localeResolver() {
-        SessionLocaleResolver slr = new SessionLocaleResolver();
-        slr.setDefaultLocale(new Locale("vi", "VN"));
-        return slr;
     }
 }

@@ -18,6 +18,7 @@ public class ScopeController {
 
     @Autowired
     ServletContext context;
+
     @RequestMapping("/scope")
     public String index(Model model) {
         model.addAttribute("a", "Model");
