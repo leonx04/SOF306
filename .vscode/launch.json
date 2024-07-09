@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Day3Application",
+            "request": "launch",
+            "mainClass": "com.example.day3.Day3Application",
+            "projectName": "Day3"
+        },
+        {
+            "type": "java",
             "name": "Spring Boot-Day2Application<app>",
             "request": "launch",
             "cwd": "${workspaceFolder}",

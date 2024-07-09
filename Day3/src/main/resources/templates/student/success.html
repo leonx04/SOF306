@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Success</title>
+</head>
+<body>
+<h1>Success</h1>
+<ul th:object="${student}">
+    <li th:text="*{email}"></li>
+    <li th:text="*{fullName}"></li>
+    <li th:text="*{mark}"></li>
+    <li th:text="*{country}"></li>
+    <li th:text="*{gender} ? 'Male' : 'Female'"></li>
+</ul>
+</body>
+</html>
