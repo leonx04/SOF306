@@ -4,6 +4,9 @@
 
 Welcome to our comprehensive project study focusing on the integration and functionalities of **Thymeleaf**, **Lambda Expressions**, and **Spring Boot** within a web application context. This repository is designed as a learning resource to explore the synergies between these powerful technologies, aiming to provide a deep dive into building modern, scalable web applications.
 
+### Note 
+    Each folder starting with "Day.." corresponds to a lab.
+    Ex: DAY1 - LAB1, DAY_2 - LAB2,...
 ## 🛠️ Technologies
 
 This project study makes use of the following key technologies:
