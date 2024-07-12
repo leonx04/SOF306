@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "RestTemplateApplication",
+            "request": "launch",
+            "mainClass": "com.example.resttemplate.RestTemplateApplication",
+            "projectName": "RestTemplate"
+        },
+        {
+            "type": "java",
             "name": "Day3Application",
             "request": "launch",
             "mainClass": "com.example.day3.Day3Application",
