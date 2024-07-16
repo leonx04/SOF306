@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESTful Consumer - AngularJS</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+
+<body ng-app="app" ng-controller="myCtrl" class="container mt-4">
+<h2 class="text-center mb-4">RESTful Consumer - AngularJS</h2>
+<div>
+    <div class="border p-2">
+        <form>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" ng-model="form.email" required>
+            </div>
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" class="form-control" id="fullname" ng-model="form.fullname" required>
+            </div>
+            <div class="form-group">
+                <label for="marks">Marks</label>
+                <input type="number" class="form-control" id="marks" ng-model="form.marks" required>
+            </div>
+            <div class="form-group">
+                <label>Gender</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="male" ng-model="form.gender"
+                           ng-value="true">
+                    <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="female" ng-model="form.gender"
+                           ng-value="false">
+                    <label class="form-check-label" for="female">Female</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <select class="form-control" id="country" ng-model="form.country">
+                    <option value="">Vui lòng chọn</option>
+                    <option value="VN">Vietnam</option>
+                    <option value="USA">USA</option>
+                    <option value="Japan">Japan</option>
+                    <option value="China">China</option>
+                </select>
+            </div>
+            <div >
+                <button type="button" class="btn btn-primary " ng-click="create()">Create</button>
+                <button type="button" class="btn btn-warning" ng-click="update()">Update</button>
+                <button type="button" class="btn btn-danger" ng-click="delete(form.email)">Delete</button>
+                <button type="button" class="btn btn-secondary" ng-click="reset()">Reset</button>
+            </div>
+        </form>
+    </div>
+    <div class="mt-2">
+        <table class="table table-striped">
+            <thead class="thead-dark">
+            <tr>
+                <th>Email</th>
+                <th>Full Name</th>
+                <th>Marks</th>
+                <th>Gender</th>
+                <th>Country</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="(key, student) in items">
+                <td>{{student.email}}</td>
+                <td>{{student.fullname}}</td>
+                <td>{{student.marks}}</td>
+                <td>{{student.gender ? 'Male' : 'Female'}}</td>
+                <td>{{student.country}}</td>
+                <td>
+                    <button class="btn btn-sm btn-primary" ng-click="edit(key)">Edit</button>
+                    <button class="btn btn-sm btn-danger" ng-click="delete(key)">Delete</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+<script src="index.js"></script>
+
+</html>
