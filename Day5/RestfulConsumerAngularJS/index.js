@@ -68,11 +68,11 @@ app.controller("myCtrl", function ($scope, $http) {
     }
 
     // Hàm chỉnh sửa thông tin sinh viên
-    $scope.edit = function (key) {
-        var url = `${host}students/${key}`; // Đường dẫn API để lấy thông tin sinh viên dựa trên key
+    $scope.edit = function (email) {
+        var url = `${host}students/${email}`; // Đường dẫn API để lấy thông tin sinh viên dựa trên key
         $http.get(url).then(function (response) {
             $scope.form = response.data; // Gán dữ liệu nhận được vào form
-            $scope.key = key; // Gán key của sinh viên vào scope
+            $scope.key = email; // Gán key của sinh viên vào scope
             console.log("Đã tải thông tin để chỉnh sửa", response.data); // Ghi log dữ liệu đã tải
         }).catch(function (error) {
             console.log("Lỗi khi tải thông tin để chỉnh sửa:", error); // Ghi log lỗi nếu có

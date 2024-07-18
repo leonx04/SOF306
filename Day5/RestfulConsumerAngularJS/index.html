@@ -81,8 +81,8 @@
                 <td>{{student.gender ? 'Male' : 'Female'}}</td>
                 <td>{{student.country}}</td>
                 <td>
-                    <button class="btn btn-sm btn-primary" ng-click="edit(key)">Edit</button>
-                    <button class="btn btn-sm btn-danger" ng-click="delete(key)">Delete</button>
+                    <button class="btn btn-sm btn-primary" ng-click="edit(student.email)">Edit</button>
+                    <button class="btn btn-sm btn-danger" ng-click="delete(student.email)">Delete</button>
                 </td>
             </tr>
             </tbody>
